@@ -10,6 +10,7 @@ import com.nisaefendioglu.recentearthquakes.R
 import com.nisaefendioglu.recentearthquakes.RecyclerAdapter
 import com.nisaefendioglu.recentearthquakes.model.EarthquakeModelItem
 import com.nisaefendioglu.recentearthquakes.service.ApiClient
+import kotlinx.android.synthetic.main.earthquake.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -21,6 +22,8 @@ class Earthquake : Fragment(R.layout.earthquake) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        progress_bar.visibility = View.VISIBLE
 
         val recyclerview = requireActivity().findViewById<RecyclerView>(R.id.recyclerview)
         listUsers = mutableListOf()
@@ -50,6 +53,8 @@ class Earthquake : Fragment(R.layout.earthquake) {
                 listUsers.clear()
                 usersResponse?.let { listUsers.addAll(it) }
                 adapter?.notifyDataSetChanged()
+                progress_bar.visibility = View.GONE
+
             }
 
         })

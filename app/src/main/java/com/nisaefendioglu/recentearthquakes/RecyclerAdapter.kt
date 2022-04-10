@@ -20,9 +20,9 @@ class RecyclerAdapter(private val context: Context, private var list: MutableLis
         holder.textView?.text = earthquake.buyukluk
         holder.textView2?.text = earthquake.yer
         holder.textView3?.text = earthquake.sehir
-        holder.textView4?.text = "Derinlik :" + earthquake.derinlik
-        holder.textView6?.text = "Saat :" + earthquake.saat
-        holder.textView7?.text = "Tarih :" +earthquake.tarih
+        holder.textView4?.text = "Derinlik :" + " " + earthquake.derinlik
+        holder.textView6?.text = "Saat :" + " " + earthquake.saat
+        holder.textView7?.text = "Tarih :" + " " +earthquake.tarih
     }
 
     override fun getItemCount(): Int {

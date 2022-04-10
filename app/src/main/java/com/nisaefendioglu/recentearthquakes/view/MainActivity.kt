@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         val earthquake = Earthquake()
         //val maps = MapFragment()
 
-        setCurrentFragment(info)
+        setCurrentFragment(earthquake)
 
         bottomNavigationView.setOnNavigationItemSelectedListener {
             when(it.itemId){
