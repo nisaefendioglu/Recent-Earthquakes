@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/infoFragment"
+        android:icon="@drawable/info"
+        android:title="Bilgi" />
+
+    <item
+        android:id="@+id/earthquakeFragment"
+        android:icon="@drawable/area"
+        android:title="Depremler" />
+
+</menu>
