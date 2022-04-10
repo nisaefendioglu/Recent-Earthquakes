@@ -2,7 +2,7 @@ package com.nisaefendioglu.recentearthquakes.fragment
 
 import android.os.Bundle
 import android.util.Log
-import androidx.appcompat.app.AppCompatActivity
+import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -10,29 +10,28 @@ import com.nisaefendioglu.recentearthquakes.R
 import com.nisaefendioglu.recentearthquakes.RecyclerAdapter
 import com.nisaefendioglu.recentearthquakes.model.EarthquakeModelItem
 import com.nisaefendioglu.recentearthquakes.service.ApiClient
-import kotlinx.android.synthetic.main.earthquake.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class Earthquake : AppCompatActivity(R.layout.earthquake) {
+class Earthquake : Fragment(R.layout.earthquake) {
 
     private var listUsers: MutableList<EarthquakeModelItem> = mutableListOf<EarthquakeModelItem>()
     private var adapter: RecyclerAdapter? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
+        val recyclerview = requireActivity().findViewById<RecyclerView>(R.id.recyclerview)
         listUsers = mutableListOf()
 
-        recyclerview.layoutManager = LinearLayoutManager(this@Earthquake)
+        recyclerview.layoutManager = LinearLayoutManager(context)
         adapter = RecyclerAdapter(
-            this,
+            requireContext(),
             listUsers
         )
         recyclerview.adapter = adapter
         getUsersData()
-
     }
 
     private fun getUsersData() {

@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         bottomNavigationView.setOnNavigationItemSelectedListener {
             when(it.itemId){
                 R.id.infoFragment ->setCurrentFragment(info)
-               // R.id.earthquakeFragment ->setCurrentFragment(earthquake)
+                R.id.earthquakeFragment ->setCurrentFragment(earthquake)
              //   R.id.mapsFragment->setCurrentFragment(maps)
 
             }
