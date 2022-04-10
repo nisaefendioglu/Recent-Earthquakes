@@ -14,13 +14,12 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="16dp"
         android:text="Deprem Nedir?"
-        android:textStyle="bold"
-        android:textSize="25dp"
         android:textColor="#C5261A"
+        android:textSize="25dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -29,15 +28,15 @@
         android:layout_width="359dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
-        android:textColor="@color/black"
         android:gravity="center"
         android:text="Deprem, yer sarsıntısı, seizma veya halk arasında zelzele, yer kabuğunda beklenmedik bir anda ortaya çıkan enerji sonucunda meydana gelen sismik dalgalanmalar ve bu dalgaların yeryüzünü sarsması olayıdır. Sismik aktivite ile kastedilen meydana geldiği alandaki depremin frekansı, türü ve büyüklüğüdür. \n\nDünyanın oluşumundan beri, sismik yönden aktif bulunan bölgelerde depremlerin ardışıklı olarak oluştuğu ve sonucundan da milyonlarca insanın ve barınakların yok olduğu bilinmektedir.
 
 Bilindiği gibi yurdumuz dünyanın en etkin deprem kuşaklarından birinin üzerinde bulunmaktadır. Geçmişte yurdumuzda birçok yıkıcı depremler olduğu gibi, gelecekte de sık sık oluşacak depremlerle büyük can ve mal kaybına uğrayacağımız bir gerçektir.\n\nDeprem Bölgeleri Haritası'na göre, yurdumuzun %92'sinin deprem bölgeleri içerisinde olduğu, nüfusumuzun %95'inin deprem tehlikesi altında yaşadığı ve ayrıca büyük sanayi merkezlerinin %98'i ve barajlarımızın %93'ünün deprem bölgesinde bulunduğu bilinmektedir.\n\nSon 58 yıl içerisinde depremlerden, 58.202 vatandaşımız hayatını kaybetmiş, 122.096 kişi yaralanmış ve yaklaşık olarak 411.465 bina yıkılmış veya ağır hasar görmüştür. Sonuç olarak denilebilir ki, depremlerden her yıl ortalama 1.003 vatandaşımız ölmekte ve 7.094 bina yıkılmaktadır."
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/black"
         android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
@@ -59,14 +58,13 @@ Bilindiği gibi yurdumuz dünyanın en etkin deprem kuşaklarından birinin üze
         android:layout_width="359dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
-        android:textColor="@color/black"
         android:gravity="center"
-        android:textSize="15dp"
         android:text="Dünyanın iç yapısı konusunda, jeolojik ve jeofizik çalışmalar sonucu elde edilen verilerin desteklediği bir yeryüzü modeli bulunmaktadır. Bu modele göre, yerkürenin dış kısmında yaklaşık 70-100 km.kalınlığında oluşmuş bir taşküre (Litosfer) vardır. Kıtalar ve okyanuslar bu taşkürede yer alır.Litosfer ile çekirdek arasında kalan ve kalınlığı 2.900 km olan kuşağa Manto adı verilir. Manto'nun altındaki çekirdegin Nikel-Demir karışımından oluştuğu kabul edilmektedir.Yerin, yüzeyden derine gidildikçe ısının arttığı bilinmektedir. Enine deprem dalgalarının yerin çekirdeğinde yayılamadığı olgusundan giderek çekirdeğin sıvı bir ortam olması gerektiği sonucuna varılmaktadır. \n\nManto genelde katı olmakla beraber yüzeyden derine inildikçe içinde yerel sıvı ortamları bulundurmaktadır. \n\nTaşküre'nin altında Astenosfer denilen yumuşak Üst Manto bulunmaktadır.Burada oluşan kuvvetler, özellikle konveksiyon akımları nedeni ile, taş kabuk parçalanmakta ve birçok Levlara bölünmektedir. Üst Manto'da oluşan konveksiyon akımları, radyoaktivite nedeni ile oluşan yüksek ısıya bağlanmaktadır. Konveksiyon akımları yukarılara yükseldikçe taşyuvarda gerilmelere ve daha sonra da zayıf zonların kırılmasıyla levhaların oluşmasına neden olmaktadır. Halen 10 kadar büyük levha ve çok sayıda küçük levhalar vardır. Bu levhalar üzerinde duran kıtalarla birlikte, Astenosfer üzerinde sal gibi yüzmekte olup, birbirlerine göre insanların hissedemeyeceği bir hızla hareket etmektedirler. \n\nKonveksiyon akımlarının yükseldiği yerlerde levhalar birbirlerinden uzaklaşmakta ve buradan çıkan sıcak magmada okyanus ortası sırtlarını oluşturmaktadır. Levhaların birbirlerine değdikleri bölgelerde sürtünmeler ve sıkışmalar olmakta, sürtünen levhalardan biri aşağıya Manto'ya batmakta ve eriyerek yitme zonlarını oluşturmaktadır. Konveksiyon akımlarının neden olduğu bu ardışıklı olay tatkürenin altında devam edip gitmektedir.\n\nİşte yerkabuğunu oluşturan levhaların birbirine sürtündükleri, birbirlerini sıkıştırdıkları, birbirlerinin üstüne çıktıkları ya da altına girdikleri bu levhaların sınırları dünyada depremlerin oldukları yerler olarak karşımıza çıkmaktadır. Dünyada olan depremlerin hemen büyük çoğunluğu bu levhaların birbirlerini zorladıkları levha sınırlarında dar kuşaklar üzerinde olusmaktadır. \n\nYukarıda, yerkabuğunu oluşturan Levhaların, Astenosferdeki konveksiyon akımları nedeniyle hareket halinde olduklarını ve bu nedenle birbirlerini ittiklerini veya birbirlerinden açıldıklarını ve bu olayların meydana geldiği zonların da deprem bölgelerini oluşturduğunu söylemiştik. \n\nBirbirlerini iten ya da diğerinin altına giren iki levha arasında, harekete engel olan bir sürtünme kuvveti vardır. Bir levhanın hareket edebilmesi için bu sürtünme kuvvetinin giderilmesi gerekir.\n\nİtilmekte olan bir levha ile bir diğer levha arasında sürtünme kuvveti aşıldığı zaman bir hareket oluşur. Bu hareket çok kısa bir zaman biriminde gerçekleşir ve şok niteliğindedir. Sonunda çok uzaklara kadar yayılabilen deprem (sarsıntı) dalgaları ortaya çıkar.Bu dalgalar geçtiği ortamları sarsarak ve depremin oluş yönünden uzaklaştıkça enerjisi azalarak yayılır. Bu sırada yeryüzünde, bazen gözle görülebilen, kilometrelerce uzanabilen ve FAY adı verilen arazi kırıkları oluşabilir. Bu kırıklar bazen yeryüzünde gözlenemez, yüzey tabakaları ile gizlenmiş olabilir. Bazen de eski bir depremden oluşmuş ve yerüzüne kadar çıkmış, ancak zamanla örtülmüş bir fay yeniden oynayabilir. \n\nDepremlerinin olusumunun bu sekilde ve 'Elastik Geri Sekme Kuramı' adı altında anlatımı 1911 yılında Amerikalı Reid tarafından yapılmıştır ve laboratuvarlarda da denenerek ispatlanmıştır. \n\nBu kurama göre, herhangibir noktada, zamana bağımlı olarak, yavaş yavaş oluşan birim deformasyon birikiminin elastik olarak depoladığı enerji, kritik bir değere eriştiğinde, fay düzlemi boyunca var olan sürtünme kuvvetini yenerek, fay çizgisinin her iki tarafındaki kayaç bloklarının birbirine göreli hareketlerini oluşturmaktadır. Bu olay ani yer değiştirme hareketidir. Bu ani yer değiştirmeler ise bir noktada biriken birim deformasyon enerjisinin açığa çıkması, boşalması, diğer bir deyişle mekanik enerjiye dönüşmesi ile ve sonuç olarak yer katmanlarının kırılma ve yırtılma hareketi ile olmaktadır. \n\nAslında kayaların, önceden bir birim yerdeğiştirme birikimine uğramadan kırılmaları olanaksızdır. Bu birim yer değiştirme hareketlerini, hareketsiz görülen yerkabuğunda, üst mantoda oluşan konveksiyon akımları oluşturmakta, kayalar belirli bir deformasyona kadar dayanıklılık gösterebilmekte ve sonrada kırılmaktadır. İşte bu kırılmalar sonucu depremler oluşmaktadır. Bu olaydan sonra da kayalardan uzak zamandan beri birikmiş olan gerilmelerin ve enerjinin bir kısmı ya da tamamı giderilmiş olmaktadır. \n\nÇoğunlukla bu deprem olayı esnasında oluşan faylarda, elastik geri sekmeler (atım), fayın her iki tarafında ve ters yönde oluşmaktadırlar. \n\nFAYLAR genellikle hareket yönlerine göre isimlendirilirler. Daha çok yatay hareket sonucu meydana gelen faylara 'Doğrultu Atımlı Fay' denir. Fayın oluşturduğu iki ayrı blokun birbirlerine göreli olarak sağa veya sola hareketlerinden de bahsedilebilinir ki bunlar sağ veya sol yönlü doğrultulu atımlı faya bir örnektir. \n\nDüsey hareketlerle meydana gelen faylara da 'Egim Atımlı Fay' denir. Fayların çoğunda hem yatay, hem de düsey hareket bulunabilir."
+        android:textColor="@color/black"
+        android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
