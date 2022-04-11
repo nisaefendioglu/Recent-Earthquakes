@@ -10,4 +10,9 @@
         android:icon="@drawable/area"
         android:title="Depremler" />
 
+    <item
+        android:id="@+id/mapsFragment"
+        android:icon="@drawable/area"
+        android:title="Deprem Haritası" />
+
 </menu>
