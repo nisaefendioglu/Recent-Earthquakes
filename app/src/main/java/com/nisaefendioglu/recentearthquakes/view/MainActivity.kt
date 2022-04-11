@@ -3,9 +3,11 @@ package com.nisaefendioglu.recentearthquakes.view
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import com.google.android.gms.maps.MapFragment
 import com.nisaefendioglu.recentearthquakes.R
 import com.nisaefendioglu.recentearthquakes.fragment.Earthquake
 import com.nisaefendioglu.recentearthquakes.fragment.InfoFragment
+import com.nisaefendioglu.recentearthquakes.fragment.Maps
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -16,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
         val info= InfoFragment()
         val earthquake = Earthquake()
-        //val maps = MapFragment()
+        val maps = Maps()
 
         setCurrentFragment(earthquake)
 
@@ -24,7 +26,7 @@ class MainActivity : AppCompatActivity() {
             when(it.itemId){
                 R.id.infoFragment ->setCurrentFragment(info)
                 R.id.earthquakeFragment ->setCurrentFragment(earthquake)
-             //   R.id.mapsFragment->setCurrentFragment(maps)
+                R.id.mapsFragment->setCurrentFragment(maps)
 
             }
             true
