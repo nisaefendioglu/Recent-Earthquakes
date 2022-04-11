@@ -7,7 +7,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.nisaefendioglu.recentearthquakes.R
-import com.nisaefendioglu.recentearthquakes.RecyclerAdapter
+import com.nisaefendioglu.recentearthquakes.adapter.RecyclerAdapter
 import com.nisaefendioglu.recentearthquakes.model.EarthquakeModelItem
 import com.nisaefendioglu.recentearthquakes.service.ApiClient
 import kotlinx.android.synthetic.main.earthquake.*
