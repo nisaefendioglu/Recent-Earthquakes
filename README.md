@@ -4,7 +4,10 @@ A mobile application that contains up-to-date information about the latest earth
 
 Türkiye'de gerçekleşen son depremlerin güncel bilgisini, depremle ilgili bilimsel açıklamaları ve Türkiye'nin deprem haritasını içerisinde barındıran bir mobil uygulama.
 
-<br>
+## Google Play Store :
+
+[![Get it on Google Play](https://play.google.com/intl/en_us/badges/images/badge_new.png)](https://play.google.com/store/apps/details?id=com.nisaefendioglu.recentearthquakes)
+
 
 Screenshots of the app :
 
