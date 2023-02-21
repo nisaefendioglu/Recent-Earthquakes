@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_margin="4dp"
     android:layout_height="wrap_content"
+    android:layout_margin="4dp"
     android:background="@drawable/shape">
 
     <TextView
@@ -13,13 +13,13 @@
         android:layout_height="60dp"
         android:layout_marginStart="16dp"
         android:gravity="center"
-        tools:text="1.0"
         android:textColor="#BA1616"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="1.0" />
 
     <TextView
         android:id="@+id/tvLocation"
@@ -27,11 +27,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="12dp"
-        tools:text="DEMIRCILER-DURSUNBEY"
-        android:textStyle="bold"
         android:textSize="11sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/tvMag"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="DEMIRCILER-DURSUNBEY" />
+
     <TextView
         android:id="@+id/tvDepth"
         android:layout_width="wrap_content"
@@ -39,13 +40,13 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="224dp"
-        tools:text="Derinlik : 5.0"
-        android:textStyle="bold"
         android:textSize="11sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/tvMag"
-        app:layout_constraintTop_toBottomOf="@+id/tvLocation" />
+        app:layout_constraintTop_toBottomOf="@+id/tvLocation"
+        tools:text="Derinlik : 5.0" />
 
     <TextView
         android:id="@+id/tvHour"
@@ -53,11 +54,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
-        android:textStyle="bold"
         android:textSize="11sp"
-        tools:text="Saat : 20:30:22"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/tvMag"
-        app:layout_constraintTop_toBottomOf="@+id/tvDepth" />
+        app:layout_constraintTop_toBottomOf="@+id/tvDepth"
+        tools:text="Saat : 20:30:22" />
 
     <TextView
         android:id="@+id/tvDate"
@@ -65,20 +66,20 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:textStyle="bold"
         android:textSize="11sp"
-        tools:text="Tarih : 2022.04.09"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/tvHour"
-        app:layout_constraintTop_toBottomOf="@+id/tvDepth" />
+        app:layout_constraintTop_toBottomOf="@+id/tvDepth"
+        tools:text="Tarih : 2022.04.09" />
 
     <TextView
         android:layout_width="56dp"
         android:layout_height="12dp"
         app:layout_constraintTop_toBottomOf="@+id/tvDate"
-        tools:layout_editor_absoluteX="167dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="167dp" />
 
     <ImageView
         android:id="@+id/imageView"

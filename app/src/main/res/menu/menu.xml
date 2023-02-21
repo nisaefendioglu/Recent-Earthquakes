@@ -3,16 +3,16 @@
     <item
         android:id="@+id/infoFragment"
         android:icon="@drawable/info"
-        android:title="Bilgi" />
+        android:title="@string/info" />
 
     <item
         android:id="@+id/earthquakeFragment"
         android:icon="@drawable/area"
-        android:title="Son Depremler" />
+        android:title="@string/recent_earthquakes" />
 
     <item
         android:id="@+id/mapsFragment"
         android:icon="@drawable/maps"
-        android:title="Harita" />
+        android:title="@string/map" />
 
 </menu>
