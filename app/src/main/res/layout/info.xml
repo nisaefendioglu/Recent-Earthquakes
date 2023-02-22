@@ -51,15 +51,5 @@ Bilindiği gibi yurdumuz dünyanın en etkin deprem kuşaklarından birinin üze
         android:textColor="@color/black"
         android:textSize="15dp"/>
 
-    <TextView
-        android:id="@+id/earthquakeDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Deprem Tehlike Haritası"
-        android:textColor="#C5261A"
-        android:textSize="20dp"
-        android:textStyle="bold"/>
-
 </LinearLayout>
 </ScrollView>
