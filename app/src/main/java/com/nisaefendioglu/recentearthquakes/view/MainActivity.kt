@@ -32,13 +32,12 @@ class MainActivity : AppCompatActivity() {
         val maps = Maps()
 
         setCurrentFragment(earthquake)
-
+        bottomNavigationView.selectedItemId = R.id.earthquakeFragment
         bottomNavigationView.setOnNavigationItemSelectedListener {
             when(it.itemId){
                 R.id.infoFragment ->setCurrentFragment(info)
                 R.id.earthquakeFragment ->setCurrentFragment(earthquake)
                 R.id.mapsFragment->setCurrentFragment(maps)
-
             }
             true
         }
