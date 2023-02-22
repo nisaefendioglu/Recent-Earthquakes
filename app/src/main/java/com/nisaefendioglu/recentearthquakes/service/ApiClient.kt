@@ -8,21 +8,21 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object ApiClient {
 
-                private const val BASE_URL: String = "https://turkiyedepremapi.herokuapp.com/"
+    private const val BASE_URL: String = "https://api.orhanaydogdu.com.tr/"
 
-                private val gson : Gson by lazy {
-                        GsonBuilder().setLenient().create()
-                }
+    private val gson: Gson by lazy {
+        GsonBuilder().setLenient().create()
+    }
 
-                private val retrofit : Retrofit by lazy {
-                        Retrofit.Builder()
-                                .baseUrl(BASE_URL)
-                                .addConverterFactory(GsonConverterFactory.create(gson))
-                                .build()
-                }
+    private val retrofit: Retrofit by lazy {
+        Retrofit.Builder()
+            .baseUrl(BASE_URL)
+            .addConverterFactory(GsonConverterFactory.create(gson))
+            .build()
+    }
 
-                val apiService :  ApiInterface by lazy{
-                        retrofit.create(ApiInterface::class.java)
-                }
+    val apiService: ApiInterface by lazy {
+        retrofit.create(ApiInterface::class.java)
+    }
 
-        }
+}
