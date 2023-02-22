@@ -7,8 +7,8 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.nisaefendioglu.recentearthquakes.R
-import com.nisaefendioglu.recentearthquakes.adapter.RecyclerAdapter
-import com.nisaefendioglu.recentearthquakes.model.EarthquakeModelItem
+import com.nisaefendioglu.recentearthquakes.adapter.EarthquakeAdapter
+import com.nisaefendioglu.recentearthquakes.model.EarthquakeResponse
 import com.nisaefendioglu.recentearthquakes.service.ApiClient
 import kotlinx.android.synthetic.main.earthquake.*
 import retrofit2.Call
@@ -17,44 +17,33 @@ import retrofit2.Response
 
 class Earthquake : Fragment(R.layout.earthquake) {
 
-    private var listUsers: MutableList<EarthquakeModelItem> = mutableListOf<EarthquakeModelItem>()
-    private var adapter: RecyclerAdapter? = null
+    lateinit var placeAdapter: EarthquakeAdapter
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        progress_bar.visibility = View.VISIBLE
-
         val recyclerview = requireActivity().findViewById<RecyclerView>(R.id.recyclerview)
-        listUsers = mutableListOf()
 
         recyclerview.layoutManager = LinearLayoutManager(context)
-        adapter = RecyclerAdapter(
-            requireContext(),
-            listUsers
-        )
-        recyclerview.adapter = adapter
-        getUsersData()
+        placeAdapter = EarthquakeAdapter()
+        recyclerview.adapter = placeAdapter
+        getData()
     }
 
-    private fun getUsersData() {
+    private fun getData() {
 
         ApiClient.apiService.getEarthquakes().enqueue(object :
-            Callback<MutableList<EarthquakeModelItem>> {
-            override fun onFailure(call: Call<MutableList<EarthquakeModelItem>>, t: Throwable) {
+            Callback<EarthquakeResponse> {
+            override fun onFailure(call: Call<EarthquakeResponse>, t: Throwable) {
                 Log.e("error", t.localizedMessage)
             }
 
             override fun onResponse(
-                call: Call<MutableList<EarthquakeModelItem>>,
-                response: Response<MutableList<EarthquakeModelItem>>
+                call: Call<EarthquakeResponse>,
+                response: Response<EarthquakeResponse>
             ) {
-                val usersResponse = response.body()
-                listUsers.clear()
-                usersResponse?.let { listUsers.addAll(it) }
-                adapter?.notifyDataSetChanged()
-                progress_bar.visibility = View.GONE
-
+                placeAdapter.setList(response.body()?.result ?: emptyList())
+                placeAdapter.notifyDataSetChanged()
             }
 
         })

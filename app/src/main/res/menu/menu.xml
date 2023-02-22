@@ -12,7 +12,6 @@
 
     <item
         android:id="@+id/mapsFragment"
-        android:icon="@drawable/area"
-        android:title="Deprem Haritası" />
-
+        android:icon="@drawable/maps"
+        android:title="Harita" />
 </menu>
