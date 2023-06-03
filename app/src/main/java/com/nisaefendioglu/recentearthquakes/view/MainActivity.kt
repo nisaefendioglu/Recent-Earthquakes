@@ -6,11 +6,10 @@ import androidx.fragment.app.Fragment
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
 import com.google.android.gms.ads.MobileAds
-import com.google.android.gms.maps.MapFragment
 import com.nisaefendioglu.recentearthquakes.R
-import com.nisaefendioglu.recentearthquakes.fragment.Earthquake
+import com.nisaefendioglu.recentearthquakes.fragment.EarthquakeFragment
 import com.nisaefendioglu.recentearthquakes.fragment.InfoFragment
-import com.nisaefendioglu.recentearthquakes.fragment.Maps
+import com.nisaefendioglu.recentearthquakes.fragment.MapsFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -28,8 +27,8 @@ class MainActivity : AppCompatActivity() {
         mAdView.loadAd(adRequest)
 
         val info= InfoFragment()
-        val earthquake = Earthquake()
-        val maps = Maps()
+        val earthquake = EarthquakeFragment()
+        val maps = MapsFragment()
 
         setCurrentFragment(earthquake)
         bottomNavigationView.selectedItemId = R.id.earthquakeFragment

@@ -23,7 +23,7 @@
         android:layout_height="50dp"
         android:layout_marginBottom="50dp"
         android:background="@color/appColor"
-        app:itemIconTint="#BA1616"
+        app:itemIconTint="@color/red"
         app:itemTextColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
