@@ -35,9 +35,8 @@ class EarthquakeAdapter : RecyclerView.Adapter<EarthquakeAdapter.EarthquakeViewH
     @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: EarthquakeViewHolder, position: Int) {
         val place = placeList[position]
-        holder.binding.tvLocation.text = place?.lokasyon
-        holder.binding.tvHour.text = "Saat: ${place?.dateHour}"
-        holder.binding.tvDate.text = "Tarih : ${place?.dateStamp}"
+        holder.binding.tvLocation.text = place?.title
+        holder.binding.tvHour.text = "Tarih: ${place?.date}"
         holder.binding.tvMag.text = place?.mag.toString()
         holder.binding.tvDepth.text = "Derinlik : ${place?.depth.toString()}"
     }

@@ -61,20 +61,6 @@
         tools:text="Saat : 20:30:22" />
 
     <TextView
-        android:id="@+id/tvDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:textSize="11sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/tvHour"
-        app:layout_constraintTop_toBottomOf="@+id/tvDepth"
-        tools:text="Tarih : 2022.04.09" />
-
-    <TextView
         android:layout_width="56dp"
         android:layout_height="12dp"
         app:layout_constraintTop_toBottomOf="@+id/tvDate"
