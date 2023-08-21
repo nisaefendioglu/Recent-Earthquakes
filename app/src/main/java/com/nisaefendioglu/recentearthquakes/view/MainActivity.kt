@@ -7,19 +7,20 @@ import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
 import com.google.android.gms.ads.MobileAds
 import com.nisaefendioglu.recentearthquakes.R
+import com.nisaefendioglu.recentearthquakes.databinding.ActivityMainBinding
 import com.nisaefendioglu.recentearthquakes.fragment.EarthquakeFragment
 import com.nisaefendioglu.recentearthquakes.fragment.InfoFragment
 import com.nisaefendioglu.recentearthquakes.fragment.MapsFragment
-import kotlinx.android.synthetic.main.activity_main.*
-
 
 class MainActivity : AppCompatActivity() {
 
     lateinit var mAdView : AdView
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         MobileAds.initialize(this) {}
         mAdView = findViewById(R.id.adView)
@@ -31,8 +32,8 @@ class MainActivity : AppCompatActivity() {
         val maps = MapsFragment()
 
         setCurrentFragment(earthquake)
-        bottomNavigationView.selectedItemId = R.id.earthquakeFragment
-        bottomNavigationView.setOnNavigationItemSelectedListener {
+        binding.bottomNavigationView.selectedItemId = R.id.earthquakeFragment
+        binding.bottomNavigationView.setOnNavigationItemSelectedListener {
             when(it.itemId){
                 R.id.infoFragment ->setCurrentFragment(info)
                 R.id.earthquakeFragment ->setCurrentFragment(earthquake)

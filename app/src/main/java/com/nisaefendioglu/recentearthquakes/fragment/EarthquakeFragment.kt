@@ -11,7 +11,6 @@ import com.nisaefendioglu.recentearthquakes.R
 import com.nisaefendioglu.recentearthquakes.adapter.EarthquakeAdapter
 import com.nisaefendioglu.recentearthquakes.model.EarthquakeResponse
 import com.nisaefendioglu.recentearthquakes.service.ApiClient
-import kotlinx.android.synthetic.main.earthquake.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

@@ -54,8 +54,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
+        android:layout_marginBottom="12dp"
         android:textSize="11sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/tvMag"
         app:layout_constraintTop_toBottomOf="@+id/tvDepth"
         tools:text="Saat : 20:30:22" />
