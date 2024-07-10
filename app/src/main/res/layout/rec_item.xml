@@ -63,7 +63,7 @@
         tools:text="Saat : 20:30:22" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imgLocation"
         android:layout_width="15dp"
         android:layout_height="15dp"
         android:layout_marginTop="15dp"
@@ -74,18 +74,18 @@
         app:srcCompat="@drawable/placeholder" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imgPool"
         android:layout_width="15dp"
         android:layout_height="15dp"
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toStartOf="@+id/tvDepth"
         app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toEndOf="@+id/tvMag"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imgLocation"
         app:srcCompat="@drawable/pool" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imgSchedule"
         android:layout_width="15dp"
         android:layout_height="15dp"
         android:layout_marginStart="9dp"
@@ -93,6 +93,6 @@
         app:layout_constraintEnd_toStartOf="@+id/tvHour"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/tvMag"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imgPool"
         app:srcCompat="@drawable/schedule" />
 </androidx.constraintlayout.widget.ConstraintLayout>
